@@ -1,0 +1,83 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(53, 88, 88);
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+form{
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(168, 238, 238);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    padding: 20px;
+}
+fieldset{
+    border: 3px solid rgb(53, 88, 88);
+    border-radius: 8px;
+    background-color: rgb(188, 247, 247);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+legend{
+    text-align: left;
+    font-weight: bold;
+    color: rgb(53, 88, 88);
+}
+
+label{
+    display: block;
+    margin-top: auto;
+    color: rgb(53, 88, 88);
+    font-weight: bold;
+}
+
+input, textarea{
+    width: calc(100% -1px);
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid rgb(53, 88, 88);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+button{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(53, 88, 88);
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+button:hover{
+    background-color: aqua;
+}
+
+#resumeOutput{
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid rgb(53, 88, 88);
+    border-radius: 8px;
+    background-color:aqua;
+
+}
+#resumeOutput h2{
+    color: aqua
+}
+.editable {
+    border: 1px dashed #ccc;
+    padding: 5px;
+    cursor: pointer;
+}

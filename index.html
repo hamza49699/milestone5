@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+   
+</head>
+<body>
+    <h1> Resume Builder By Hamza Javed</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username">Resume URL: </label><br>
+            <input type="text" name="username" id="username" placeholder="Enter your username" required
+            ><br><br>
+            <label for="name">Name: </label><br>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email: </label><br>
+            <input type="text" name="email" id="email" placeholder="Enter your email address" required><br><br>
+
+            <label for="phone">Phone: </label><br>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required><br><br>
+
+            <label for="profilePicture">Profile Picture: </label><br>
+            <input type="file" id="profilePicture" accept="image/*"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label><br>
+            <textarea name="education" id="education" rows="4" placeholder="Enter your education" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience:</label><br>
+            <textarea name="experience" id="experience" rows="4" placeholder="Enter your experience" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label><br>
+            <textarea name="skills" id="skills" rows="4" placeholder="Enter your skills" required></textarea><br>
+        </fieldset><br>
+
+        <button type="submit">Generate your Resume</button><br>
+    </form>
+    <div id="resumeOutput">
+        <!-- Resume will be generated below -->
+        <h1>YOUR RESUME</h1>
+    </div>
+</body>
+</html>
